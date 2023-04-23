@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!-- 
+
+INSTRUCOES
+
+	iniciar_visivel:	ESPACO/SPACE (Para exibir ou ocultar objetos)
+	ssh_iniciar_auto:	CTRL + @ (Iniciar SSH)
+	exibir_log_ssh: 	CTRL + ! (Exibir log SSH)
+
+	Para que o SSH funcione, copie o arquivo szarca-ssh/plink.exe para C:\
+	Modelo CONNSSH (Usar o szarca-crypt para codificar as conexoes):
+	
+	<conn
+		ssh_servidor="177.19.19.0"
+		ssh_porta="22"
+		ssh_usuario="user"
+		ssh_senha="pass">
+	
+		<ssh_tn id="01" pLocal="127.0.0.1:4000" pRemoto="192.168.0.1:4000"></ssh_tn>
+		<ssh_tn id="02" pLocal="127.0.0.1:5000" pRemoto="192.168.0.2:5000"></ssh_tn>
+		<ssh_tn id="03" pLocal="127.0.0.1:6000" pRemoto="192.168.0.3:6000"></ssh_tn>
+	
+	</conn>
+	
+	#Variaveis
+	
+	systemTrayIcon: 		Exibe o icone ao lado do relogio
+	executar_background:	O sistema executa em background
+
+-->
+<dispositivos 
+
+	servidor="http://localhost:80/szarca-dock/class.php" 
+	tempo_atualizacao="30000" 
+	audio_alertar="false"
+	log="false"
+	iniciar_visivel="true"
+	executar_objetos="true"
+	systemTrayIcon="true"
+	executar_background="true"
+	
+	key="zyc405"
+	key_seguranca=""
+
+	cor_offline="FF0000"
+	cor_online="999999"
+	cor_obj_titulo=""
+	escalaXY="0"
+	
+	ssh="false"
+	ssh_iniciar_auto="false"
+	ssh_id_conn_auto="conn_1"
+	ssh_status="true" 
+
+>
+
+<ssh id="conn_1" titulo="conexao_1" vetor="" key=""></ssh>
+	
+	
+	<obJ 
+		md="PING"
+		tp='ICON_SERVER'
+		id='1'
+		titulo='SEU PC - YOUR PC' 
+		ip='127.0.0.1' 
+		o_x='664.45'
+		o_y='47.75'
+		num='false'
+		nivel='true'
+		alerta='true'
+		>
+	</obJ>
+	
+	
+
+</dispositivos>
