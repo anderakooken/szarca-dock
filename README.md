@@ -16,7 +16,7 @@ Para edição do frontend, sugiro utilizar o **Adobe CS5.5** ou superior, pois e
 
 ## Estrutura do projeto
 
-|  ARQUIVO              |ASCII                          |HTML                         |
+|  ARQUIVO              |                          |                         |
 |----------------|-------------------------------|-----------------------------|
 |szarca-dock.fla| Arquivo para edição do programa| Código AS3 incluso na Timeline (Camada 1) 
 |class.php|Arquivo modelo para PHP            | Recebe as requisições do frontend |
